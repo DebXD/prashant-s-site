@@ -10,6 +10,7 @@ function App() {
     "https://github.com/InternetFound/emy-ci/releases/download/PixelExtended/PixelExtended-5.5_lavender-13.0-20230226-1534-UNOFFICIAL.zip";
   const bliss =
     "https://github.com/InternetFound/emy-ci/releases/download/PixelExtended/PixelExtended-5.5_lavender-13.0-20230226-1534-UNOFFICIAL.zip";
+  const support = "https://www.buymeacoffee.com/debiprasadxd";
   const handleClick = (e) => {
     console.log(e.target.id);
     setButtonId(e.target.id);
@@ -101,7 +102,7 @@ function App() {
                 className="ml-2 active:text-pink-600 active:bg-white text-pink-600 font-bold py-2 px-4 rounded"
                 onClick={heartCLick}
               >
-                <a href="#">
+                <a href={support} target="_blank">
                   <HiHeart className="h-6 w-6" />
                 </a>
               </button>
