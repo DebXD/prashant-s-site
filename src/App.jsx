@@ -10,33 +10,37 @@ function App() {
     "https://github.com/InternetFound/emy-ci/releases/download/PixelExtended/PixelExtended-5.5_lavender-13.0-20230226-1534-UNOFFICIAL.zip";
   const bliss =
     "https://github.com/InternetFound/emy-ci/releases/download/PixelExtended/PixelExtended-5.5_lavender-13.0-20230226-1534-UNOFFICIAL.zip";
-  const support = "https://www.buymeacoffee.com/debiprasadxd";
+  const support = "https://www.paypal.me/prashant1605";
+  const moreBuilds = "https://www.pling.com/p/1668809/";
   const handleClick = (e) => {
     console.log(e.target.id);
     setButtonId(e.target.id);
     console.log(countClick);
     setCountClick(countClick + 1);
   };
-    const heartCLick = () => {
-      if (heart) {
-        setHeart(false);
-        console.log(heart);
-      } else {
-        setHeart(true);
-        console.log(heart);
-      }
-    };
+  const heartCLick = () => {
+    if (heart) {
+      setHeart(false);
+      console.log(heart);
+    } else {
+      setHeart(true);
+      console.log(heart);
+    }
+  };
 
   return (
     // <div className="bg-b bg-gradient-to-r from-blue-900 to-black h-screen">
-    <div className=" bg-gray-900 h-screen">
+    <div
+      className=" bg-gradient-to-r from-blue-600 to-purple-500
+    h-screen"
+    >
       <h1 className=" text-center text-bold text-3xl py-6 text-white font-[Poppins]">
         Hi There, Welcome to Prashant's Builds
       </h1>
 
-      <div className="bg-gray-800 px-4 py-6 mx-10 lg:mx-80 md:mx-20 rounded-lg">
+      <div className="bg-indigo-800 px-4 py-6 mx-10 lg:mx-80 md:mx-20 rounded-lg">
         <h2 className="text-2xl font-semi-bold mb-4 text-center text-white font-[Ubuntu]">
-          Here are some of my builds...
+          Here are some of my featured builds...
         </h2>
         {/* <!-- <p className="text-gray-700">Some text goes here.</p> --> */}
         <ul className="mt-4 flex flex-wrap justify-center pt-10">
@@ -86,13 +90,20 @@ function App() {
             </button>
             {buttonId === "bliss" && countClick % 2 !== 0 ? (
               <button className="ml-2 bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-md shadow-md">
-                <a href="#" target="_blank">
+                <a href={bliss} target="_blank">
                   <HiDownload className="h-6 w-6" />
                 </a>
               </button>
             ) : (
               ""
             )}
+          </li>
+          <li className="mb-4 flex items-center">
+            <button className="ml-2 bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 text-white font-bold py-2 px-4 rounded-md flex items-center">
+              <a href={moreBuilds} target="_blank">
+                More Builds
+              </a>
+            </button>
           </li>
         </ul>
         <ul className="mt-10 flex flex-wrap justify-center">
@@ -111,7 +122,7 @@ function App() {
                 className="ml-2 text-pink-600 font-bold py-2 px-4 rounded"
                 onClick={heartCLick}
               >
-                <a href={bliss}>
+                <a href={support}>
                   <HiOutlineHeart className="h-6 w-6" />
                 </a>
               </button>
