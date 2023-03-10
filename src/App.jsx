@@ -31,15 +31,18 @@ function App() {
   return (
     // <div className="bg-b bg-gradient-to-r from-blue-900 to-black h-screen">
     <div
-      className=" bg-gradient-to-r from-blue-600 to-purple-500
+      className=" bg-gray-900
     h-screen"
     >
-      <h1 className=" text-center text-bold text-3xl py-6 text-white font-[Poppins]">
-        Hi There, Welcome to Prashant's Builds
+      <h1 className=" text-center text-bold text-3xl pt-6  text-white font-[sofia]">
+        Hi There,
+      </h1>
+      <h1 className=" text-center text-semi-bold text-4xl pb-6  text-white font-[Teko]">
+        Welcome to Prashant's Builds
       </h1>
 
-      <div className="bg-indigo-800 px-4 py-6 mx-10 lg:mx-80 md:mx-20 rounded-lg">
-        <h2 className="text-2xl font-semi-bold mb-4 text-center text-white font-[Ubuntu]">
+      <div className="bg-gray-800 px-4 py-6 mx-10 lg:mx-80 md:mx-20 rounded-lg">
+        <h2 className="text-2xl font-bold mb-4 text-center text-white font-[Abel]">
           Here are some of my featured builds...
         </h2>
         {/* <!-- <p className="text-gray-700">Some text goes here.</p> --> */}
@@ -130,6 +133,16 @@ function App() {
           </li>
         </ul>
       </div>
+      <footer className="bg-gray-900 py-4 pt-56">
+        <div className="container flex justify-center items-center">
+          <span className="text-gray-200 mr-2 font-[Poppins]">Made with</span>
+
+          <span className="text-gray-200 flex font-[Poppins]">
+            <HiHeart className="text-pink-600 w-6 h-6 mr-1" />
+            <a href="https://github.com/debxd"> by DebXD</a>
+          </span>
+        </div>
+      </footer>
     </div>
   );
 }
