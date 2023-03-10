@@ -13,18 +13,14 @@ function App() {
   const support = "https://www.paypal.me/prashant1605";
   const moreBuilds = "https://www.pling.com/p/1668809/";
   const handleClick = (e) => {
-    console.log(e.target.id);
     setButtonId(e.target.id);
-    console.log(countClick);
     setCountClick(countClick + 1);
   };
   const heartCLick = () => {
     if (heart) {
       setHeart(false);
-      console.log(heart);
     } else {
       setHeart(true);
-      console.log(heart);
     }
   };
 
