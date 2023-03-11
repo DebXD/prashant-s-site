@@ -52,11 +52,13 @@ function App() {
               Crdroid
             </button>
             {buttonId === "cr" && countClick % 2 !== 0 ? (
+              <a href={cr} target="_blank">
               <button className="ml-2  bg-orange-600 hover:bg-orange-700 active:bg-orange-800 text-white font-bold py-2 px-4 rounded-md shadow-md">
-                <a href={cr} target="_blank">
+                
                   <HiDownload className="h-6 w-6" />
-                </a>
+                
               </button>
+              </a>
             ) : (
               ""
             )}
@@ -70,11 +72,13 @@ function App() {
               Pixel Extended
             </button>
             {buttonId === "pex" && countClick % 2 !== 0 ? (
+              <a href={pex} target="_blank">
               <button className="ml-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md shadow-md">
-                <a href={pex} target="_blank">
+                
                   <HiDownload className="h-6 w-6" />
-                </a>
+                
               </button>
+              </a>
             ) : (
               ""
             )}
@@ -88,21 +92,23 @@ function App() {
               Bliss OS
             </button>
             {buttonId === "bliss" && countClick % 2 !== 0 ? (
+              <a href={bliss} target="_blank">
               <button className="ml-2 bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-md shadow-md">
-                <a href={bliss} target="_blank">
+                
                   <HiDownload className="h-6 w-6" />
-                </a>
+                
               </button>
+              </a>
             ) : (
               ""
             )}
           </li>
           <li className="mb-4 flex items-center">
+          <a href={moreBuilds} target="_blank">
             <button className="ml-2 bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 text-white font-bold py-2 px-4 rounded-md flex items-center">
-              <a href={moreBuilds} target="_blank">
-                More Builds
-              </a>
+             More Builds
             </button>
+            </a>
           </li>
         </ul>
         <ul className="mt-10 flex flex-wrap justify-center">
